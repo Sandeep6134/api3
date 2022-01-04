@@ -36,7 +36,7 @@ row.append(srch)
 function func()
 {
     let val=document.getElementById('txt1').value
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/hello`).then((d)=>{
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${val}`).then((d)=>{
     return(d.json())
 }).then((dat)=>{
     console.log(dat)
